@@ -1,0 +1,12 @@
+
+version: '1.0'
+services:
+  discovery:
+    build: discovery-service
+    image: discovery-service:v1.0
+    container_name: discovery-service
+    restart: always
+    expose:
+      - "8761"
+    ports:
+      - "8761:8761"
